@@ -5,3 +5,4 @@ dist
 MUJOCO_LOG.TXT
 .vscode
 *.ipynb
+logdir*
