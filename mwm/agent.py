@@ -1,6 +1,5 @@
 import tensorflow as tf
 from tensorflow.keras import mixed_precision as prec
-from tensorflow_text import sliding_window
 
 import common
 
