@@ -67,8 +67,7 @@ defaults:
   imag_horizon: 15
   actor_grad: auto
   actor_grad_mix: 0.1
-  actor_ent: 1e-4
-  aent: {scale: 1.0}
+  aent: {scale: 1e-4}
   slow_target: True
   slow_target_update: 100
   slow_target_fraction: 1
