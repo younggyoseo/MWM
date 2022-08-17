@@ -2,6 +2,13 @@
 
 Implementation of the MWM in TensorFlow 2. Our code is based on the implementation of [DreamerV2](https://github.com/danijar/dreamerv2) and [APV](https://arxiv.org/abs/2203.13880). Raw data we used for reporting our main experimental results is available in `scores` directory.
 
+## Updates
+### 17 August 2022
+- Updated default hyperparameters which have been different from the hyperparameters used for reporting the results in the paper. Specifically, `aent.scale` is changed from 1.0 to 1e-4 and `kl.scale` is changed from 0.1 to 1.0. Please re-run experiments with updated parameters if you want to reproduce the results manually.
+
+### 10 August 2022
+- Added raw logs `score.json` which were used for generating the figures for the paper.
+
 ## Method
 Masked World Models (MWM) is a visual model-based RL algorithm that decouples visual representation learning and dynamics learning. The key idea of MWM is to train an autoencoder that reconstructs visual observations with convolutional feature masking, and a latent dynamics model on top of the autoencoder.
 

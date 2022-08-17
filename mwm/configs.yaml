@@ -51,7 +51,7 @@ defaults:
   reward_head: {layers: [512, 512, 512, 512], act: elu, norm: none, dist: symlog}
   discount_head: {layers: [512, 512, 512, 512], act: elu, norm: none, dist: binary}
   loss_scales: {feature: 1.0, kl: 1.0, reward: 1.0, discount: 1.0, proprio: 1.0, mae_reward: 1.0}
-  wmkl: {scale: 0.1}
+  wmkl: {scale: 1.0}
   wmkl_minloss: 0.0
   wmkl_balance: 0.8
   model_opt: {opt: adam, lr: 3e-4, eps: 1e-5, clip: 100.0, wd: 1e-6, wd_pattern: 'kernel', warmup: 0}
