@@ -3,6 +3,9 @@
 Implementation of the MWM in TensorFlow 2. Our code is based on the implementation of [DreamerV2](https://github.com/danijar/dreamerv2) and [APV](https://arxiv.org/abs/2203.13880). Raw data we used for reporting our main experimental results is available in `scores` directory.
 
 ## Updates
+### 11 June 2023
+- We recent become aware that public implementation of MWM is not able to reproduce the results in the paper for DMC tasks, currently working to fix the bugs.
+
 ### 17 August 2022
 - Updated default hyperparameters which have been different from the hyperparameters used for reporting the results in the paper. Specifically, `aent.scale` is changed from 1.0 to 1e-4 and `kl.scale` is changed from 0.1 to 1.0. Please re-run experiments with updated parameters if you want to reproduce the results manually.
 
